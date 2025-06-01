@@ -1,0 +1,58 @@
+{
+  "name": "@skairipaapps/pqc-encryption",
+  "private": false,
+  "version": "1.1.0",
+  "description": "Universal PQC encryption library for Node.js, Bun, and modern runtimes.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "types": "tsc --emitDeclarationOnly",
+    "build": "bun run build:esm && bun run build:cjs && npm run types",
+    "build:esm": "bun build src/index.ts --outdir dist --target node --format esm --outfile index.js",
+    "build:cjs": "bun build src/index.ts --outfile dist/index.cjs --target node --format cjs",
+    "dev": "bun run src/index.ts",
+    "prepare": "bun run build",
+    "test": "bun test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skairipa-Apps/pqc-encryption.git"
+  },
+  "keywords": [
+    "encryption",
+    "post-quantum",
+    "PQC",
+    "quantum-safe",
+    "crypto",
+    "argon2",
+    "kyber",
+    "dilithium",
+    "node",
+    "bun",
+    "universal"
+  ],
+  "author": "Skairipa Apps Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skairipa-Apps/pqc-encryption/issues"
+  },
+  "homepage": "https://github.com/Skairipa-Apps/pqc-encryption#readme",
+  "engines": {
+    "node": ">=18",
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
+

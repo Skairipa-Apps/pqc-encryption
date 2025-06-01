@@ -1,7 +1,7 @@
 PQC-encryption
 ==================
 
-[https://github.com/Skairipa-Apps/pqc-encryption/blob/main/LICENSE](LICENSE)
+[LICENSE](https://github.com/Skairipa-Apps/pqc-encryption/blob/main/LICENSE)
 
 **Post-Quantum Cryptography (PQC) Encryption Library**  
 Developed and maintained by **Skairipa Apps Inc.**
@@ -143,7 +143,7 @@ ___________
 License
 -------
 
-This project is licensed under the **MIT License** — see the [https://github.com/Skairipa-Apps/pqc-encryption/blob/main/LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](https://github.com/Skairipa-Apps/pqc-encryption/blob/main/LICENSE) file for details.
 
 ___________
 
